@@ -1,35 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Título da página</title>
-    </head>
-    <body>
-        <h1>Primeiro cabeçalho</h1>
-        <h2>Segundo cabeçalho</h2>
-        <h3>Terceiro cabeçalho</h3>
-        <p>Primeiro parágrafo.</p>
-        <img src="folha.jpg" title="Primeira imagem" height="80" width="80">
-        <a href="http://www.uft.edu.br/" target="_blank">Primeiro link</a>
-        
-        <ul>
-            <li>Primeiro item da primeira lista</li>
-            <li>Segundo item da primeira lista</li>
-            <li>Terceiro item da primeira lista</li>
-        </ul>
-
-        <ul>
-            <li>Primeiro item da segunda lista</li>
-            <li>Segundo item da segunda lista</li>
-            <li>Terceiro item da segunda lista</li>
-        </ul>
-
-        <ol>
-            <li>Primeiro item ordenado</li>
-            <li>Segundo item ordenado</li>
-            <li>Terceiro item ordenado</li>
-        </ol>
-    </body>
 </html>
 <!DOCTYPE html>
 <html>
@@ -42,7 +10,7 @@
         <h2>Segundo cabeçalho</h2>
         <h3>Terceiro cabeçalho</h3>
         <p>Primeiro parágrafo.</p>
-        <img src="folha.jpg" title="Primeira imagem" height="80" width="80">
+        <img src="folha.png" title="Primeira imagem" height="80" width="80">
         <a href="http://www.uft.edu.br/" target="_blank">Primeiro link</a>
         
         <ul>
@@ -63,7 +31,7 @@
             <li>Terceiro item ordenado</li>
         </ol>
 
-        <table border="1">
+    <bodytable border="1">
             <tr>
                 <th>Cabeçalho 1</th>
                 <th>Cabeçalho 2</th>
@@ -95,5 +63,18 @@
                 <td>Linha 4, Coluna 4</td>
             </tr>
         </table>
-    </body>
-</html>
+   <form action="/cadastro/" method="post">
+    <label for="Login">Login</label>
+<input type="text" name="Login" id="Login" placeholder="Digite seu nome de usuário">
+
+    <label for="Senha">Senha</label>
+<input type="password" name="Senha" id="Senha">
+
+
+<input type="radio" name="sexo" value="1" checked> Masculino
+<input type="radio" name="sexo" value="2" > Feminino
+
+<input type="checkbox" name="veiculo1" value="bike"> Eu tenho bicicleta
+<input type="checkbox" name="veiculo2" value="carro"> Eu tenho carro
+
+</form>
