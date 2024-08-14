@@ -1,80 +1,139 @@
-</html>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Título da página</title>
-    </head>
-    <body>
-        <h1>Primeiro cabeçalho</h1>
-        <h2>Segundo cabeçalho</h2>
-        <h3>Terceiro cabeçalho</h3>
-        <p>Primeiro parágrafo.</p>
-        <img src="folha.png" title="Primeira imagem" height="80" width="80">
-        <a href="http://www.uft.edu.br/" target="_blank">Primeiro link</a>
-        
-        <ul>
-            <li>Primeiro item da primeira lista</li>
-            <li>Segundo item da primeira lista</li>
-            <li>Terceiro item da primeira lista</li>
-        </ul>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da página</title>
+    <script src="funcoes/funcoes.js" defer></script>
+</head>
+<body>
+    <h1>Primeiro cabeçalho</h1>
+    <h2>Segundo cabeçalho</h2>
+    <h3>Terceiro cabeçalho</h3>
+    <p>Primeiro parágrafo.</p>
+    <!-- Caminho relativo correto para a imagem na pasta img -->
+    <img src="img/folha" title="Primeira imagem" height="80" width="80" alt="Imagem não carregada">
+    <a href="http://www.uft.edu.br/" target="_blank">Primeiro link</a>
+    
+    <ul>
+        <li>Primeiro item da primeira lista</li>
+        <li>Segundo item da primeira lista</li>
+        <li>Terceiro item da primeira lista</li>
+    </ul>
 
-        <ul>
-            <li>Primeiro item da segunda lista</li>
-            <li>Segundo item da segunda lista</li>
-            <li>Terceiro item da segunda lista</li>
-        </ul>
+    <ul>
+        <li>Primeiro item da segunda lista</li>
+        <li>Segundo item da segunda lista</li>
+        <li>Terceiro item da segunda lista</li>
+    </ul>
 
-        <ol>
-            <li>Primeiro item ordenado</li>
-            <li>Segundo item ordenado</li>
-            <li>Terceiro item ordenado</li>
-        </ol>
+    <ol>
+        <li>Primeiro item ordenado</li>
+        <li>Segundo item ordenado</li>
+        <li>Terceiro item ordenado</li>
+    </ol>
 
-    <bodytable border="1">
-            <tr>
-                <th>Cabeçalho 1</th>
-                <th>Cabeçalho 2</th>
-                <th>Cabeçalho 3</th>
-                <th>Cabeçalho 4</th>
-            </tr>
-            <tr>
-                <td>Linha 1, Coluna 1</td>
-                <td>Linha 1, Coluna 2</td>
-                <td>Linha 1, Coluna 3</td>
-                <td>Linha 1, Coluna 4</td>
-            </tr>
-            <tr>
-                <td>Linha 2, Coluna 1</td>
-                <td>Linha 2, Coluna 2</td>
-                <td>Linha 2, Coluna 3</td>
-                <td>Linha 2, Coluna 4</td>
-            </tr>
-            <tr>
-                <td>Linha 3, Coluna 1</td>
-                <td>Linha 3, Coluna 2</td>
-                <td>Linha 3, Coluna 3</td>
-                <td>Linha 3, Coluna 4</td>
-            </tr>
-            <tr>
-                <td>Linha 4, Coluna 1</td>
-                <td>Linha 4, Coluna 2</td>
-                <td>Linha 4, Coluna 3</td>
-                <td>Linha 4, Coluna 4</td>
-            </tr>
-        </table>
-   <form action="/cadastro/" method="post">
-    <label for="Login">Login</label>
-<input type="text" name="Login" id="Login" placeholder="Digite seu nome de usuário">
+    <table border="1">
+        <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+            <th>Cabeçalho 3</th>
+            <th>Cabeçalho 4</th>
+        </tr>
+        <tr>
+            <td>Linha 1, Coluna 1</td>
+            <td>Linha 1, Coluna 2</td>
+            <td>Linha 1, Coluna 3</td>
+            <td>Linha 1, Coluna 4</td>
+        </tr>
+        <tr>
+            <td>Linha 2, Coluna 1</td>
+            <td>Linha 2, Coluna 2</td>
+            <td>Linha 2, Coluna 3</td>
+            <td>Linha 2, Coluna 4</td>
+        </tr>
+        <tr>
+            <td>Linha 3, Coluna 1</td>
+            <td>Linha 3, Coluna 2</td>
+            <td>Linha 3, Coluna 3</td>
+            <td>Linha 3, Coluna 4</td>
+        </tr>
+        <tr>
+            <td>Linha 4, Coluna 1</td>
+            <td>Linha 4, Coluna 2</td>
+            <td>Linha 4, Coluna 3</td>
+            <td>Linha 4, Coluna 4</td>
+        </tr>
+    </table>
 
-    <label for="Senha">Senha</label>
-<input type="password" name="Senha" id="Senha">
+    <form action="/cadastro/" method="post">
+        <label for="Login">Login</label>
+        <input type="text" name="Login" id="Login" placeholder="Digite seu nome de usuário">
 
+        <label for="Senha">Senha</label>
+        <input type="password" name="Senha" id="Senha">
 
-<input type="radio" name="sexo" value="1" checked> Masculino
-<input type="radio" name="sexo" value="2" > Feminino
+        <input type="radio" name="sexo" value="1" checked> Masculino
+        <input type="radio" name="sexo" value="2"> Feminino
 
-<input type="checkbox" name="veiculo1" value="bike"> Eu tenho bicicleta
-<input type="checkbox" name="veiculo2" value="carro"> Eu tenho carro
+        <input type="checkbox" name="veiculo1" value="bike"> Eu tenho bicicleta
+        <input type="checkbox" name="veiculo2" value="carro"> Eu tenho carro
 
-</form>
+        Curso:
+        <select name="Curso">
+            <option value="1">Ciência da Computação</option>
+            <option value="2">Direito</option>
+            <option value="3">Medicina</option>
+            <option value="4">Engenharia Elétrica</option>
+        </select>
+
+        <label for="Mensagem">Mensagem</label>
+        <textarea name="Mensagem" id="Mensagem" rows="10" cols="30"></textarea>
+
+        <label for="Idade">Idade</label>
+        <input type="number" name="Idade" id="Idade" placeholder="Digite sua idade">
+
+        <label for="DataNascimento">Data de Nascimento</label>
+        <input type="date" name="DataNascimento" id="DataNascimento">
+
+        <!-- Campos para entrada de valores fixos -->
+        <label for="valor1">Valor 1</label>
+        <input type="number" id="valor1" name="valor1" value="10" readonly> <!-- Valor fixo -->
+
+        <label for="valor2">Valor 2</label>
+        <input type="number" id="valor2" name="valor2" value="20" readonly> <!-- Valor fixo -->
+
+        <!-- Campo para resultado da soma (preenchido manualmente) -->
+        <label for="resultadoSoma">Resultado da Soma</label>
+        <input type="text" id="resultadoSoma" name="resultadoSoma" placeholder="Resultado da soma" readonly>
+
+        <!-- Campo de auto-complete para queijos -->
+        <label for="Queijo">Queijo</label>
+        <input type="text" id="Queijo" name="Queijo" list="queijos" placeholder="Escolha um queijo">
+
+        <datalist id="queijos">
+            <option value="Cheddar">
+            <option value="Parmesão">
+            <option value="Gorgonzola">
+            <option value="Mozzarella">
+            <option value="Roquefort">
+            <option value="Brie">
+            <option value="Camembert">
+            <option value="Gouda">
+            <option value="Emmental">
+            <option value="Gruyère">
+        </datalist>
+
+        <!-- Campo oculto com valor fixo -->
+        <input type="hidden" name="pais" value="Brasil">
+
+        <!-- Botões para ações -->
+        <button type="button" onclick="mostrarMensagem()">Botão 01: Mostrar Hello, World!</button>
+        <button type="button" onclick="mostrarSoma()">Botão 02: Mostrar Soma</button>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
+
