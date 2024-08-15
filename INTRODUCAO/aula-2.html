@@ -7,13 +7,14 @@
     <!-- Inclusão do CSS do Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Inclusão do Bootstrap Bundle com Popper -->
-    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.bundle.js" defer></script>
     <style>
         body {
             background: url('web_mobile/img/bg.jpeg') no-repeat center center fixed;
             background-size: cover;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
         }
         .carousel-caption {
             background-color: rgba(0, 0, 0, 0.5);
@@ -49,7 +50,7 @@
     </header>
 
     <!-- Carrossel -->
-    <div id="characterCarousel" class="carousel slide">
+    <div id="characterCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="web_mobile/img/img1.jpg" class="d-block w-100" alt="Expressão com Raiva">
@@ -81,12 +82,18 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Próximo</span>
         </button>
+        <!-- Indicadores de Carrossel -->
+        <ol class="carousel-indicators">
+            <li data-bs-target="#characterCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#characterCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#characterCarousel" data-bs-slide-to="2"></li>
+        </ol>
     </div>
 
     <!-- Rodapé -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Página de Expressões. Todos os direitos reservados.</p>
+            <p>&copy; 2024 LBH. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
